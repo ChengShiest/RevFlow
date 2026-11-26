@@ -1,0 +1,11 @@
+{
+  "source": "ILSVRC/imagenet-1k train parquet, rows in sorted-shard file order (original packed index)",
+  "shards": 294,
+  "images": 1281167,
+  "labels_sha256": "1dfed266db040125846c2ad809ed0af427012afbc863b721f97baa720a386009",
+  "lengths_sha256": "b13ff24a24d116fe7e0305c4f91f0246ea3f80a6d18adb1765695743cfb5fa7c",
+  "total_bytes": 146894240874,
+  "row0_sha256": "b556bae57108f94b81d6b3058bbb50c192859a4224d57eb1c228e69cf2e3b431",
+  "nm_support_rows_sha256": "fcd35d7ff2063d8649b0acaf800c8d75ec578b03ca9dbfea8021915001d46424",
+  "flow_stats_rows": [0, 50000]
+}

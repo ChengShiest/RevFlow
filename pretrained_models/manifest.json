@@ -1,0 +1,61 @@
+{
+  "model_id": "chengshi0612/RevFlow",
+  "revision": "8b81fbe85cb50a4a7aa7417b4de33501b6f29ebc",
+  "files": [
+    {
+      "path": "pretrained_models/native_matching/nm-cache-stats.pt",
+      "sha256": "4b80028d140010d7257b05449127a628f830d229a71deff00dfea4952285f887",
+      "size": 2361328
+    },
+    {
+      "path": "pretrained_models/native_matching/nm-chart.pt",
+      "sha256": "fca7e6eca1c12d7839253c88dfaebb3b445fbe123c800f6f467aee069d255408",
+      "size": 4276656
+    },
+    {
+      "path": "pretrained_models/native_matching/nm-parent.pt",
+      "sha256": "5b4a5e43deaf9d3efe9000f313d0d6fd30f9015553d7d2a6af24367f74be546b",
+      "size": 3409026800
+    },
+    {
+      "path": "pretrained_models/native_matching/nm-stats.pt",
+      "sha256": "9ae1d948d8d489c985509182f99e9220afcf5063c1f2580571f47fcb2930d7b4",
+      "size": 2361328
+    },
+    {
+      "path": "pretrained_models/native_matching/revflow-xl-nm.pt",
+      "sha256": "1833d58b3fd87db1e7bd918997caf955ea3de36527922c81c5747bddf4282e4f",
+      "size": 3409023920
+    },
+    {
+      "path": "pretrained_models/stage1/codec.pt",
+      "sha256": "c3cfcee3c325afa8577b0d25082cd58dd0e422b4de9c468bfa6e4cf193d86ad3",
+      "size": 367014978
+    },
+    {
+      "path": "pretrained_models/stage1/stats.pt",
+      "sha256": "6c437b115e9df8c346b94e883555a436c2e47bc377883665f21ac3268dfb823b",
+      "size": 2361328
+    },
+    {
+      "path": "pretrained_models/stage2/revflow-h-5ep.pt",
+      "sha256": "005172482a94409328afb4f8c12d75451114813a92ac6a23e9f7f05204facb73",
+      "size": 6186363660
+    },
+    {
+      "path": "pretrained_models/stage2/revflow-h-80ep.pt",
+      "sha256": "25906c702c37d9def11e33410615994e68932b6b2aec0e4d0e68f09b73c74f78",
+      "size": 6186363660
+    },
+    {
+      "path": "pretrained_models/stage2/revflow-xl-5ep.pt",
+      "sha256": "69704d08651dfa1b885f1b103639a4e5bcfa33e2878a7ea5de6eb269684feacd",
+      "size": 2760075952
+    },
+    {
+      "path": "pretrained_models/stage2/revflow-xl-80ep.pt",
+      "sha256": "1d23626b411e6e32b5b8e9728183012ee404c0319b6e539d2b069c2a110e8061",
+      "size": 2760075952
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+model:
+  input_size: 16
+  hi_channels: 1024
+  lo_channels: 128
+  hidden_size: 1152
+  depth: 28
+  num_heads: 16
+  base_model_depth: 8
+  num_classes: 1000
+  ddt_width: 2048
+  ddt_heads: 16
+native_matching:
+  kernel: image_marginals
+  fm_weight: 0.1351080981029292
+  steps: 1000
+  classes_per_update: 128
+  samples_per_class: 32
+  micro_batch: 16
+  reference_time: 0.3
+  train_hi_scale: 2.0
+  train_lo_scale: 2.0
+  muon_lr: 0.00005
+  adamw_lr: 0.000025
+  ema_decay: 0.9985
+  save_every: 250
+sampling:
+  hi_scale: 3.0
+  lo_scale: 2.0

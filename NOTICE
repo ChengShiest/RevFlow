@@ -1,0 +1,20 @@
+RevFlow
+
+revflow/models/ follows the LightningDiT XL/1 design (RMSNorm, SwiGLU, 2D rotary
+embeddings, AdaLN blocks) and was checked against
+https://github.com/hustvl/LightningDiT at f315f25b6aaad600b4d8e50a8167ce06f2e957f3,
+Copyright (c) 2024 HUST Vision Lab, MIT License.
+
+revflow/optim.py implements Muon (https://github.com/KellerJordan/Muon).
+Native matching uses GMuon (https://github.com/nanovisionx/gmuon) as an external
+dependency. FID scoring uses a torch-fidelity fork
+(https://github.com/LTH14/torch-fidelity) and reference statistics from JiT
+(https://github.com/LTH14/JiT); neither is redistributed here.
+
+DINOv3 (https://github.com/facebookresearch/dinov3) is an external dependency under
+the DINOv3 License; its code and weights are not redistributed. ImageNet is subject
+to its own terms of access. data_prep/ contains scripts that download these assets
+and two small index files (row numbers and class IDs of a fixed ImageNet subset);
+no image data is redistributed.
+
+The license of this repository covers its code, not external models, images or datasets.

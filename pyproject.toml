@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "revflow"
+version = "0.1.0"
+description = "Two-stage class-conditional ImageNet generation with one LightningDiT: deep DINOv3 features first, then a shallow codec bottleneck"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["torch>=2.5", "numpy>=1.24", "Pillow>=9.1", "PyYAML>=6"]
+
+[project.optional-dependencies]
+nm = ["gram-newton-schulz @ git+https://github.com/nanovisionx/gmuon.git@4863cc2446f09a54d937c579d4e775c125f5ab2e"]
+fid = ["torch-fidelity @ git+https://github.com/LTH14/torch-fidelity.git@bfe72b995473e4fee9351705d7b005f17442a4ca"]
+data = ["pyarrow>=12", "huggingface_hub>=0.23"]
+
+[project.scripts]
+revflow-train = "revflow.train:main"
+revflow-sample = "revflow.inference:main"
+revflow-assets = "revflow.assets:main"
+revflow-nm-train = "revflow.native_matching.train:main"
+revflow-nm-support = "revflow.native_matching.support:main"
+revflow-nm-evaluate = "revflow.native_matching.evaluate:main"
+
+[tool.setuptools.packages.find]
+include = ["revflow*"]
+
+[tool.setuptools.package-data]
+revflow = ["configs/*.yaml"]

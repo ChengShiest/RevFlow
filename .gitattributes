@@ -1,0 +1,4 @@
+# Small support arrays and documentation images are ordinary Git files.
+# Model, codec, and statistics files remain on ModelScope.
+*.npy -text
+*.png -text
